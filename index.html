@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add bookmark</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1 id="show-modal">Add Bookmark</h1>
+
+    <!--Bookmarks-->
+    <div class="container" id="bookmark-container">
+      <!-- <div class="item">
+        <i
+          class="fas fa-times"
+          id="delete-bookmark"
+          title="Delete Bookmark"
+        ></i>
+        <div class="name">
+          <img src="worldwide.png" alt="" />
+          <a href="#" target="_blank">link name</a>
+        </div>
+      </div>
+
+      <div class="item">
+        <i
+          class="fas fa-times"
+          id="delete-bookmark"
+          title="Delete Bookmark"
+        ></i>
+        <div class="name">
+          <img src="worldwide.png" alt="" />
+          <a href="#" target="_blank">link name</a>
+        </div>
+      </div>
+      
+      <div class="item">
+        <i
+          class="fas fa-times"
+          id="delete-bookmark"
+          title="Delete Bookmark"
+        ></i>
+        <div class="name">
+          <img src="worldwide.png" alt="" />
+          <a href="#" target="_blank">link name</a>
+        </div>
+      </div> -->
+    </div>
+
+    <!--MODAL-->
+    <div class="modal-container" id="modal">
+      <div class="modal">
+        <i class="fas fa-times close-icon" id="close-modal"></i>
+        <div class="modal-header">
+          <h3>Add Bookmark</h3>
+        </div>
+        <div class="modal-content">
+          <form id="bookmark-form">
+            <!--WEBSITE NAME-->
+            <div class="form-group">
+              <label for="website-name" class="form-label">Website Name</label>
+              <input type="text" class="form-input" id="website-name" />
+            </div>
+            <!--WEBSITE URL-->
+            <div class="form-group">
+              <label for="website-url" class="form-label">Website URL</label>
+              <input type="text" class="form-input" id="website-url" />
+            </div>
+            <button type="submit">SAVE</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="app.js"></script>
+</html>
